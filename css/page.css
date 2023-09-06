@@ -17,17 +17,17 @@ header {
     color: white;
     text-transform: uppercase;
     position: fixed;
-    width: 100vw;
+    width: 100vw;     /*nao precisa setar largura, pois ela ocupa 100% da tela por padrao*/
 
 }
 header h1 {
     font-size: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
     color: #4e0c2e;
-    padding: 30px 15px 30px 15px ;
-   
 
+    /* Nao precisa de nenhum desses padding, eles estao bugando o site, so apagar eles e pronto */
+    /* padding-top: 20px;
+    padding-bottom: 20px;
+    padding: 30px 15px 30px 15px ; */
 }
 
 ul {
@@ -35,11 +35,13 @@ ul {
     align-items: center;
     list-style: none;
     gap: 80px;
-    margin-left: 400px;
+
+    /* nao precisa dessa margem, pois o header ja tem o display flex com aling itens space between, colocado os itens espalhados iguais, apague o margin abaixo */
+    /* margin-left: 400px; */
 }
 ul li a {
     color: white;
-    font-size: 20x;
+    font-size: 16px;
     text-decoration: none;
 }
 button{
@@ -54,20 +56,27 @@ button{
     
 /* home1 */
 .main-home {
+    /* Troque esse padding, de 60px para 20vh
+    pois 10 e a altura do header, e 10vh e para ficar abaixo */
     padding-top: 60px;
     background-color: #4e0c2e;
     color: white;
 }
+
 .main-home h1 {
     text-align: center;
     padding-top: 20px;
     font-size: 60px;
+    /* na media querie lembre de diminuir o tam desse texto,
+    60px e grande demais para celular. */
 }
 .main-home p {
 text-align: center;
 padding-top: 30px;
 padding-bottom: 40px;
 font-size: 25px;
+/* inves de usar p, vc pode usar um h2, ou h4 use um font size de 24px
+e tambem lembre de diminuir a fonte para celular pois 24px e grande tmb */
 }
 
 /* home2*/
