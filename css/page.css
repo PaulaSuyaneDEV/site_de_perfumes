@@ -29,6 +29,9 @@ header h1 {
     padding-bottom: 20px;
     padding: 30px 15px 30px 15px ; */
 }
+.menu-mobile {
+    display: none;
+}
 
 ul {
     display: flex;
@@ -45,11 +48,12 @@ ul li a {
     text-decoration: none;
 }
 button{
-    background-color: white;
-    border:2px solid #4e0c2e;
+    background-color: #4e0c2e;
+    border:2px solid white;
     font-size: 20px;
     padding: 5px;
     border-radius: 5px;
+    color: white;
     }
 
     /* home-img */
@@ -99,7 +103,7 @@ text-transform: uppercase;
 }
 
 .box1 {
-    width: 30%;
+    width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -114,7 +118,7 @@ text-transform: uppercase;
     height: 250px;
 }
 .box2 {
-    width: 70%;
+    width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -147,6 +151,7 @@ text-transform: uppercase;
 .main-produtos li {
     background-color: #fe5d9f;
 }
+   
 .main-produtos h3 {
     margin-top: 10px;
     text-align: center;
