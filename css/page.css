@@ -16,16 +16,11 @@ header {
   color: white;
   text-transform: uppercase;
   position: fixed;
-  width: 100vw; /*nao precisa setar largura, pois ela ocupa 100% da tela por padrao*/
+  width: 100vw; 
 }
 header h1 {
   font-size: 40px;
   color: #4e0c2e;
-
-  /* Nao precisa de nenhum desses padding, eles estao bugando o site, so apagar eles e pronto */
-  /* padding-top: 20px;
-    padding-bottom: 20px;
-    padding: 30px 15px 30px 15px ; */
 }
 .menu-mobile {
   display: none;
@@ -36,15 +31,14 @@ ul {
   align-items: center;
   list-style: none;
   gap: 80px;
-
-  /* nao precisa dessa margem, pois o header ja tem o display flex com aling itens space between, colocado os itens espalhados iguais, apague o margin abaixo */
-  /* margin-left: 400px; */
 }
 ul li a {
   color: white;
   font-size: 16px;
   text-decoration: none;
+  
 }
+
 button {
   background-color: #4e0c2e;
   border: 2px solid white;
@@ -54,13 +48,10 @@ button {
   color: white;
 }
 
-/* home-img */
 
 /* home1 */
 .main-home {
-  /* Troque esse padding, de 60px para 20vh
-    pois 10 e a altura do header, e 10vh e para ficar abaixo */
-  padding-top: 60px;
+  padding-top: 20vh;
   background-color: #4e0c2e;
   color: white;
 }
@@ -69,16 +60,12 @@ button {
   text-align: center;
   padding-top: 20px;
   font-size: 60px;
-  /* na media querie lembre de diminuir o tam desse texto,
-    60px e grande demais para celular. */
 }
 .main-home p {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 40px;
-  font-size: 25px;
-  /* inves de usar p, vc pode usar um h2, ou h4 use um font size de 24px
-e tambem lembre de diminuir a fonte para celular pois 24px e grande tmb */
+  font-size: 24px;
 }
 
 /* home2*/
@@ -88,19 +75,12 @@ e tambem lembre de diminuir a fonte para celular pois 24px e grande tmb */
   align-items: center;
   display: flex;
   flex-direction: column;
-
-  /* use apenas um cod para padding, o primeiro valor e de cima e baixo
-  o segundo e esquerda e direita. apague o top e o bottom. */
-  padding: 20px;
-  padding-top: 60px;
-  padding-bottom: 15px;
+  padding: 60px 0 15px 0;
   background-color: #f4bbd3;
 }
 .main-home2 h2 {
   text-align: center;
   font-size: 40px;
-
-  /* diminua a fonte para telas menores tmb */
   text-transform: uppercase;
 }
 
@@ -111,16 +91,15 @@ e tambem lembre de diminuir a fonte para celular pois 24px e grande tmb */
   align-items: center;
   display: flex;
   align-items: center;
-  padding-top: 30px;
-  padding-left: 30px;
+  padding: 30px;
 }
 .box1 img {
-  /* o correto e usar width: 100% para que as imagens se adpte em td dispositivo
-  porem deve setar tmb um max-width para q a imagem nao cresca demais. faca isso para
-  as imagens e elas se ajustarao melhor */
   width: 600px;
   height: 250px;
+  max-width: 500px;
+  min-width: 300px;
 }
+
 .box2 {
   width: 50%;
   height: 100%;
@@ -141,18 +120,21 @@ e tambem lembre de diminuir a fonte para celular pois 24px e grande tmb */
 }
 /* produtos */
 .main-produtos {
-  padding: 5rem 0;
   width: 100%;
+  padding: 3rem 0;
 }
 .main-produtos ul {
   display: flex;
   width: 90%;
-  margin: 30px auto;
-  gap: 130px;
+  gap: 100px;
   padding: 15px;
+  margin: 10px auto;
+
 }
 .main-produtos li {
   background-color: #fe5d9f;
+  border-radius: 7px;
+  padding: 10px;
 }
 
 .main-produtos h3 {
@@ -197,6 +179,7 @@ e tambem lembre de diminuir a fonte para celular pois 24px e grande tmb */
 .promocoes ul li {
   background-color: white;
   padding: 30px;
+  border-radius: 7px;
 }
 .promocoes ul li h1 {
   padding-bottom: 10px;
@@ -276,5 +259,3 @@ img {
   height: 300px;
   width: 200px;
 }
-
-/* responsividade*/

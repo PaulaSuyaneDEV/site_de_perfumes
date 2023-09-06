@@ -13,26 +13,31 @@
     }
 
         .main-home h1 {
-            font-size: 30px;
+            font-size: 40px;
             text-align: center;
         }
         .main-home p {
             font-size: 16px;
             text-align: center;
+            padding: 20px;
         }
-    
+        .main-home2 h2 {
+            font-size: 30px;
+        }
         .main-homebox1 {
             flex-direction: column;
             gap: 20px;
         }
         .box1 {
-            text-align: center;
+            width: 100%;
+            padding: 10px;
         }
-        .box1 img {
-            padding: 20px;
-        }
+        
         .box2  {
+            width: 100%;
             font-size: 16px;
+            padding: 20px;
+
         }
         
     .box1 {
@@ -52,6 +57,7 @@
     }
     .main-produtos h2 {
         font-size: 16px;
+        padding: 20px;
 
     }
        
@@ -60,8 +66,29 @@
     }
     .promocoes h3{
     font-size: 16px;
+    text-align: justify;
+    padding: 20px;
     }
 
+    .contact h2 {
+        font-size: 40px;
+    }
+    .contact p {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .contact input {
+        width: 300px;
+        height: 40px;
+    }
+    .contact textarea {
+        width: 300px;
+        height: 100px;
+    }
+    footer {
+        font-size: 16px;
+    }
     nav.active {
         position: absolute;
         top:10vh;
