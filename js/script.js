@@ -1,7 +1,7 @@
 
-const menuNav = document.getElementById('menu-nav');
+const menuNav = document.getElementById('menuNav');
 
-const btn = document.querySelector('.menu-mobile');
+const btn = document.querySelector('.menuMobile');
 
 //adicionar a funcao de clique no botao
 
