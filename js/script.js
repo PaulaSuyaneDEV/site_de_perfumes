@@ -22,7 +22,7 @@ const email = document.getElementById('email');
 const number = document.getElementById('number');
 const message = document.getElementById('message');
 
-function login(){
+function EnviarMensagem(){
 if (email.value == '' && number.value == '' && message.value == '') {
    alert("Preencha os campos: ")
 }
